@@ -19,5 +19,4 @@ def cakeSlice(slicevolume) :
     numberOfSlices= int((totalVolume)/(sliceVolume))
     return numberOfSlices
 numberOfSlices = str(cakeSlice(sliceVolume))
-print(totalVolume)
 print("The number of slices to cut is " + numberOfSlices)
