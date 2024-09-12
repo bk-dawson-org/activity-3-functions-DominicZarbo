@@ -14,9 +14,10 @@ volumeTotal = str(cakeVolume(radiusBottom, heightBottom, radiusTop, heightTop, n
 print("The volume of the cake is " + volumeTotal)
 
 sliceVolume = int(input("What is the desired volume of a slice of cake "))
-volumeTotalMath = cakeVolume(radiusBottom, heightBottom, radiusTop, heightBottom, numberOfLayers)
+totalVolume = int(cakeVolume(radiusBottom, heightBottom, radiusTop, heightTop, numberOfLayers))
 def cakeSlice(slicevolume) :
-    numberOfSlices= int((volumeTotalMath)/(sliceVolume))
+    numberOfSlices= int((totalVolume)/(sliceVolume))
     return numberOfSlices
 numberOfSlices = str(cakeSlice(sliceVolume))
+print(totalVolume)
 print("The number of slices to cut is " + numberOfSlices)
